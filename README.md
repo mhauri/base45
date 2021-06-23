@@ -27,7 +27,7 @@ $ composer require mhauri/base45
 
 
 ``` php
-$base45 = new Mhauri\Base45;
+$base45 = new \Mhauri\Base45();
 
 $encoded = $base45->encode(random_bytes(128));
 $decoded = $base45->decode($encoded);

@@ -3,6 +3,8 @@
 *base45* is a PHP based base45 encoder/decoder that is fully compatible with [draft-faltstrom-base45-03](https://datatracker.ietf.org/doc/html/draft-faltstrom-base45-03).
 
 [![Latest Version](https://img.shields.io/packagist/v/mhauri/base45.svg?style=flat-square)](https://packagist.org/packages/mhauri/base45)
+![GitHub Workflow Status (event)](https://img.shields.io/github/workflow/status/mhauri/base45/Tests?event=push&style=flat-square)
+![Codecov](https://img.shields.io/codecov/c/github/mhauri/base45?style=flat-square)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 ## Introduction

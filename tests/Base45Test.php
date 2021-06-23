@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Mhauri\Base45;
+namespace Mhauri;
 
-use Mhauri\Base45;
 use PHPUnit\Framework\TestCase;
 
 class Base45Test extends TestCase

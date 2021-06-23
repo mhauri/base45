@@ -31,6 +31,15 @@ class Base45Test extends TestCase
         $this->assertEquals($input, $result);
     }
 
+    public function testRandomBytes()
+    {
+        $base45 = new Base45();
+        $bytes = random_bytes(128);
+        $encoded = $base45->encode($bytes);
+        $decoded = $base45->decode($encoded);
+        $this->assertSame($decoded, $bytes);
+    }
+
     public function testException()
     {
         $this->expectException(\Exception::class);
@@ -42,7 +51,7 @@ class Base45Test extends TestCase
         return [
             ['AB', 'BB8'],
             ['Hello!!', '%69 VD92EX0'],
-            ['base-45', 'UJCLQE7W581']
+            ['base-45', 'UJCLQE7W581'],
         ];
     }
 }

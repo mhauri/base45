@@ -1,9 +1,17 @@
 # Base45
 
-*base45* is a base45 encoder/decoder that is fully compatible [draft-faltstrom-base45-03](https://datatracker.ietf.org/doc/html/draft-faltstrom-base45-03).
+*base45* is a PHP based base45 encoder/decoder that is fully compatible with [draft-faltstrom-base45-03](https://datatracker.ietf.org/doc/html/draft-faltstrom-base45-03).
 
 [![Latest Version](https://img.shields.io/packagist/v/mhauri/base45.svg?style=flat-square)](https://packagist.org/packages/mhauri/base45)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
+## Introduction
+
+When using QR or Aztec codes a different encoding scheme is needed
+than the already established base 64, base 32 and base 16 encoding
+schemes that are described in RFC [RFC4648](https://datatracker.ietf.org/doc/html/rfc4648).  The difference
+from those and base 45 is the key table and that the padding with '='
+is not required.
 
 ## Install
 
